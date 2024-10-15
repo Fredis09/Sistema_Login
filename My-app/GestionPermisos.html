@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion Permiso</title>
+    <link rel="stylesheet" href="Mihoja-estilos.css">
+</head>
+<body>
+    <header id="header">
+        <h3>Gesti&oacute;n de Permisos</h3>
+    </header>
+    <div id="FormDiv">
+        <form id="Formulario" action="/submit" method="post">
+            <label for="nombre">Nombre:</label><br>
+            <input type="text" id="nombre" name="nombre" required><br>
+    
+            
+            <label for="modulo">M&oacute;dulo:</label><br>
+            <input type="text" id="modulo" name="modulo" required><br>
+    
+ 
+            <label for="formulario">Formulario:</label><br>
+            <input type="text" id="formulario" name="formulario" required><br>
+    
+            <label for="estado">Estado</label><br>
+                <input type="checkbox" id="estado" name="estado"><br>
+              
+    
+            
+            <label for="fecha_creacion">Fecha de Creaci&oacute;n:</label><br>
+            <input type="date" id="fecha_creacion" name="fecha_creacion" required><br>
+    
+    
+            <label for="descripcion">Descripci&oacute;n:</label><br>
+            <input type="text" id="descripcion" name="descripcion" required><br>
+    
+   
+            <label for="rol">Rol:</label><br>
+            <select id="rol" name="rol" required>
+                <option value="" disabled selected>Seleccione un rol</option>
+                <option value="admin">Administrador</option>
+                <option value="editor">Editor</option>
+                <option value="viewer">Visualizador</option>
+                <option value="guest">Invitado</option>
+            </select><br>
+    
+
+            <label for="orden">Orden:</label><br>
+            <input type="number" id="orden" name="orden" required><br>
+    
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+</body>
+</html>

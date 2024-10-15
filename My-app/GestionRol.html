@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Mihoja-estilos.css">
+    <title>Gestion Rol</title>
+</head>
+<body>
+    <header id="header">
+        <h3>Gesti&oacute;n de Roles</h3>
+    </header>
+
+    <div id="FormDiv">
+        <form id="Formulario" action="/submit" method="post">
+            <label for="nombre">Nombre:</label><br>
+            <input type="text" id="nombre" name="nombre" required><br>
+    
+            <label for="descripcion">Descripci&oacute;n:</label><br>
+            <input type="text" id="descripcion" name="descripcion" required><br>
+    
+            <label for="estado">Estado:</label><br>
+            <input type="checkbox" id="estado" name="estado"><br><br>
+    
+            <label for="fecha_creacion">Fecha de Creaci&oacute;n:</label><br>
+            <input type="date" id="fecha_creacion" name="fecha_creacion" required><br>
+    
+            <label for="rol_padre">Rol Padre:</label><br>
+            <input type="text" id="rol_padre" name="rol_padre"><br>
+    
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+</body>
+</html>

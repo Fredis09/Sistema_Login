@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion Usuario</title>
+    <link rel="stylesheet" href="Mihoja-estilos.css">
+</head>
+<body>
+    <header id="header">
+        <h3>Gesti&oacute;n de Usuarios</h3>
+    </header>
+    <div id="FormDiv">
+        <form id="Formulario" action="/submit" method="post">
+            <label for="usuario">Usuario:</label><br>
+            <input type="text" id="usuario" name="usuario" required><br>
+
+            <label for="email">Correo Electr&oacute;nico:</label><br>
+            <input type="email" id="email" name="email" required><br>
+            
+            <label for="password">Contraseña:</label><br>
+            <input type="password" id="password" name="password" required><br>
+    
+            <label for="estado">Estado:</label><br>
+            <input type="checkbox" id="estado" name="estado"><br>
+    
+            <label for="rol">Rol:</label><br>
+            <select id="rol" name="rol" required>
+                <option value="" disabled selected>Seleccione un rol</option>
+                <option value="admin">Administrador</option>
+                <option value="editor">Editor</option>
+                <option value="viewer">Visualizador</option>
+                <option value="guest">Invitado</option>
+            </select><br>
+    
+            <label for="fecha_alta">Fecha de Alta:</label><br>
+            <input type="date" id="fecha_alta" name="fecha_alta" required><br>
+    
+            <label for="fecha_baja">Fecha de Baja:</label><br>
+            <input type="date" id="fecha_baja" name="fecha_baja"><br>
+    
+            <label for="id_empleado">ID del Empleado:</label><br>
+            <select id="id_empleado" name="id_empleado" required>
+                <option value="" disabled selected>Seleccione un empleado</option>
+                <option value="1">Empleado 1</option>
+                <option value="2">Empleado 2</option>
+                <option value="3">Empleado 3</option>
+            </select><br>
+    
+            <label for="observacion">Observaci&oacute;n:</label><br>
+            <textarea id="observacion" name="observacion" rows="4" cols="50" placeholder="Ingrese observaciones..."></textarea><br>
+    
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+</body>
+</html>
